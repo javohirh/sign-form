@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  color: #fff;
+}
+body {
+  background-image: url(https://cdn1.epicgames.com/ue/product/Screenshot/Layer%201-1920x1080-09ce7cd20ea190e17bd060a5c57538a7.png?resize=1&w=1920);
+}
+.wrapper {
+  border-radius: 5px;
+  margin: 8% auto;
+  max-width: 502px;
+
+  background-color: #00000070;
+  padding: 30px;
+}
+.wrapper h2 {
+  text-align: center;
+  padding-bottom: 20px;
+}
+input {
+  width: 100%;
+  padding: 5px;
+  color: #000;
+}
+.form-group {
+  padding-bottom: 15px;
+}
+
+.checkbox {
+  display: flex;
+  padding-bottom: 15px;
+}
+.checkbox input {
+  margin-right: 3px;
+  width: initial;
+}
+
+.checkbox a {
+  color: #ffffff90;
+}
+button {
+  width: 100%;
+  height: 6vh;
+  padding: 10px;
+  background-color: rgb(3, 192, 129);
+  border: none;
+  transition: 0.5s;
+  border-radius: 5px;
+}
+button:hover {
+  font-size: 20px;
+}
+
+button:active {
+  color: red;
+}
+hr {
+  width: 25%;
+  height: 0;
+}
+.hr {
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.socials {
+  margin-top: 15px;
+  display: flex;
+  gap: 5px;
+  justify-content: space-between;
+}
+.socials a {
+  text-decoration: none;
+  transition: 0.5s;
+}
+.socials a:hover {
+  color: rgb(173, 237, 109);
+}
+.facebook {
+  gap: 8px;
+  justify-content: center;
+  border-radius: 5px;
+  display: flex;
+  padding: 8px;
+  width: 33%;
+}
+.facebook:hover {
+  cursor: pointer;
+}
+.face {
+  background-color: #4666b1;
+}
+.twit {
+  background-color: #25a9e0;
+}
+.google {
+  background-color: #d94735;
+}
+.footer {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  text-align: center;
+}
+.footer a {
+  color: aquamarine;
+}
