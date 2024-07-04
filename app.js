@@ -18,6 +18,7 @@ loginBtn.addEventListener("click", function () {
   if (sign.style.display === "block") {
     sign.style.display = "none";
     login.style.display = "block";
+    enter.style.display = "flex";
   }
 });
 
