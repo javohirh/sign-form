@@ -3,37 +3,52 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/b76e356ba6.js"
+      crossorigin="anonymous"
+    ></script>
     <link rel="stylesheet" href="./style.css" />
     <title>Login Form</title>
   </head>
 
   <body>
+    <button class="entry">
+      Login<i class="fa-solid fa-right-to-bracket"></i>
+    </button>
     <div class="wrap">
       <div class="wrapper">
+        <div class="close close1"><i class="fa-solid fa-x"></i></div>
         <h2>Log In</h2>
         <form action="https://echo.htmlacademy.ru/">
           <div class="form-group">
-            
-            <input required type="email" name="email" id="email" placeholder="E-mail" />
-          </div>
-          <div class="form-group">
-            <input required
-              type="password"
-              name="pasword"
-              id="pasword"
-              placeholder="Password"
+            <input
+              required
+              type="email"
+              name="email"
+              id="email1"
+              placeholder="E-mail"
             />
           </div>
-        
-        <div class="checkbox">
-          <input required  type="checkbox" name="checkbox" id="checkbox" />
-          <p>
-            I have read and agree to the <a href="#">Terms of Use</a> and
-            <a href="#">Privacy Policy</a>
-          </p>
-        </div>
-        <button  type="submit">Login</button>
-      </form>
+          <div class="form-group">
+            <input
+              required
+              type="password"
+              name="pasword"
+              id="password1"
+              placeholder="Password"
+              autocomplete="corrent-password"
+            />
+          </div>
+
+          <div class="checkbox">
+            <input required type="checkbox" name="checkbox" id="checkbox1" />
+            <p>
+              I have read and agree to the <a href="#">Terms of Use</a> and
+              <a href="#">Privacy Policy</a>
+            </p>
+          </div>
+          <button type="submit">Login</button>
+        </form>
         <div class="hr">
           <hr />
           <p>or Log in with social media</p>
@@ -42,24 +57,95 @@
         <div class="socials">
           <div class="facebook face">
             <img src="./images/facebook.svg" alt="" />
-            <h4><a target="_blank" href="https://www.facebook.com">Facebook</h4>
-            </div></a> 
+            <h4>
+              <a target="_blank" href="https://www.facebook.com">Facebook </a>
+            </h4>
+          </div>
           <div class="facebook twit">
             <img src="./images/twitter.svg" alt="" width="16px" />
-            <h4> <a target="_blank" href="https:twitter.com">Twitter</a></h4>
+            <h4><a target="_blank" href="https:twitter.com">Twitter</a></h4>
           </div>
           <div class="facebook google">
             <img src="./images/google.svg" alt="" width="16px" />
             <h4>
-              <a target="_blank"  href="https://www.google.co.uk/">Google</a></h4>
+              <a target="_blank" href="https://www.google.co.uk/">Google</a>
+            </h4>
           </div>
         </div>
         <div class="footer">
           <p>
-            Don't have an account? <a href="./sign up/index.html">Sign up</a>
+            Don't have an account?
+            <button class="signBtn" href="">Sign up</button>
           </p>
         </div>
       </div>
     </div>
+    <div id="container">
+      <div class="form-wrap">
+        <div class="close close2"><i class="fa-solid fa-x"></i></div>
+        <h1>Sign Up</h1>
+        <p>It's free and only takes a minute</p>
+
+        <form action="https://echo.htmlacademy.ru/">
+          <div class="form-group">
+            <label for="first">First Name</label>
+            <input required type="text" name="first" id="first" />
+          </div>
+
+          <div class="form-group">
+            <label for="last">Last Name</label>
+            <input required type="text" name="last" id="last" />
+          </div>
+
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input
+              required
+              type="email"
+              name="email"
+              id="email"
+              autocomplete="username"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input
+              required
+              type="password"
+              name="password2"
+              id="password2"
+              autocomplete="new-password"
+            />
+          </div>
+
+          <div class="form-group">
+            <label for="password"> Confirm Password </label>
+            <input
+              required
+              minlength="8"
+              type="password"
+              name="password3"
+              id="password3"
+              autocomplete="new-password"
+            />
+          </div>
+          <button type="submit">Sign up</button>
+        </form>
+
+        <p class="bottom-text">
+          By clicking the Sign Up button, you agree to our
+          <a href="">Terms & Conditions</a> and <a href="">Privacy Policy</a>
+        </p>
+      </div>
+
+      <footer>
+        <p>
+          Already have an account?
+          <button class="loginBtn" href="">Login Here</button>
+        </p>
+      </footer>
+    </div>
+    <script src="./app.js"></script>
   </body>
 </html>
