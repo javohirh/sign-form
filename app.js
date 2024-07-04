@@ -12,6 +12,7 @@ enter.addEventListener("click", function () {
 signBtn.addEventListener("click", function () {
   login.style.display = "none";
   sign.style.display = "block";
+  enter.style.display = "none";
 });
 loginBtn.addEventListener("click", function () {
   if (sign.style.display === "block") {
@@ -28,6 +29,7 @@ close2.addEventListener("click", function () {
     sign.style.display = "none";
     login.style.display = "block";
     login.classList.remove("active");
+    enter.style.display = "flex";
   }
 });
 
