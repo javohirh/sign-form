@@ -5,9 +5,17 @@ const loginBtn = document.querySelector(".loginBtn");
 const close1 = document.querySelector(".close1");
 const close2 = document.querySelector(".close2");
 const enter = document.querySelector(".entry");
+const navList = document.querySelector(".nav__list");
+const list = document.querySelector(".list");
+const menu = document.querySelector(".mobile-menu");
 
+menu.addEventListener("click", function () {
+  addClass();
+});
 enter.addEventListener("click", function () {
   login.classList.add("active");
+  navList.classList.remove("active-nav-list"),
+    list.classList.remove("active-ul");
 });
 signBtn.addEventListener("click", function () {
   login.style.display = "none";
@@ -33,5 +41,18 @@ close2.addEventListener("click", function () {
     enter.style.display = "flex";
   }
 });
+
+function addClass() {
+  if (navList.classList.length === 1) {
+    return (
+      navList.classList.add("active-nav-list"), list.classList.add("active-ul")
+    );
+  } else {
+    return (
+      navList.classList.remove("active-nav-list"),
+      list.classList.remove("active-ul")
+    );
+  }
+}
 
 // sign.style.display = "none";
